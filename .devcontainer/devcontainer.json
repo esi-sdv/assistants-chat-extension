@@ -1,0 +1,19 @@
+{
+  "name": "VS Code Extension Development",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "pmneo.tsimporter",
+        "WallabyJs.quokka-vscode",
+        "christian-kohler.path-intellisense"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install",
+  "forwardPorts": [3000]
+}
